@@ -46,7 +46,7 @@ $id = $_REQUEST['id'];
 $email = $_REQUEST['email'];
 $password = $_REQUEST['password'];
 
-  $insert = "INSERT INTO users VALUES ('id','$email', '$password')";
+  $insert = "INSERT INTO users (id,email,password) VALUES ('$id','$email', '$password')";
 
  if (mysqli_query($conn,$insert)) {
      echo "deta stored";
